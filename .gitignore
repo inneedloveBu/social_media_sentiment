@@ -1,0 +1,25 @@
+# 环境相关
+venv/
+env/
+.vscode/
+.idea/
+__pycache__/
+
+# 数据文件（大文件不上传GitHub）
+data/raw_data_backup.csv
+*.pkl
+*.pickle
+*.h5
+*.npy
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.log
+
+# Python
+*.pyc
+*.pyo
