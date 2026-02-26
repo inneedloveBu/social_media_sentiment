@@ -4,7 +4,7 @@
 
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗-Hugging%20Face%20Spaces-blue)](https://huggingface.co/spaces/indeedlove/Social-Media-Sentiment-Analysis)
-[![GitHub](https://img.shields.io/badge/📂-VGitHub-black)](https://github.com/inneedloveBu/social_media_sentiment)
+[![GitHub](https://img.shields.io/badge/📂-GitHub-black)](https://github.com/inneedloveBu/social_media_sentiment)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
