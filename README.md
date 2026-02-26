@@ -1,6 +1,6 @@
 # 社交媒体情感分析系统Social Media Sentiment Analysis System
 
-[![bilibili](https://img.shields.io/badge/🎥-Video%20on%20Bilibili-yellow)](https://www.bilibili.com/video/BV1M9qwB1EBc/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=223)
+[![bilibili](https://img.shields.io/badge/🎥-Video%20on%20Bilibili-red)](https://www.bilibili.com/video/BV1M9qwB1EBc/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=223)
 
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗-Hugging%20Face%20Spaces-blue)](https://huggingface.co/spaces/indeedlove/Social-Media-Sentiment-Analysis)
