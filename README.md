@@ -1,4 +1,4 @@
-# 社交媒体情感分析系统
+# 社交媒体情感分析系统Social Media Sentiment Analysis System
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗-Live%20Demo-blue)](https://huggingface.co/spaces/indeedlove/Social-Media-Sentiment-Analysis)
 [![GitHub](https://img.shields.io/badge/📂-View%20on%20GitHub-black)](https://github.com/inneedloveBu/social_media_sentiment)
@@ -8,6 +8,111 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Streamlit](https://img.shields.io/badge/Web%20Framework-Streamlit-red)
 
+
+## 🎯 Project Overview
+
+A complete Chinese social media (Weibo) sentiment analysis system, covering the entire process from data acquisition, cleaning, feature engineering to model training, evaluation, and interactive demonstration. The project aims to showcase the application of Natural Language Processing (NLP) and Machine Learning (ML) techniques in real-world scenarios.
+
+**Core Highlights:**
+- Complete implementation of a data science workflow
+- Optimized processing for Chinese social media text
+- Comparison and in-depth analysis of multiple machine learning models
+- Interactive web application for real-time demonstration
+- Exploration of big data processing frameworks (Spark)
+
+## 📊 Project Performance
+
+| Metric | Score | Description |
+|--------|-------|-------------|
+| **Best F1 Score** | 0.70 | Performance of Logistic Regression model on test set |
+| **Accuracy** | 0.70 | Overall classification accuracy of the model |
+| **Data Size** | 119,988 | Balanced positive and negative sentiment Weibo posts |
+| **Feature Dimension** | 2,000 | Size of TF-IDF feature vector |
+
+## 🏗️ Project Structure
+
+```
+social_media_sentiment/
+│
+├── data/                      # Dataset
+│   ├── raw/                   # Original data
+│   └── processed/             # Cleaned data
+│
+├── notebooks/                  # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb   # Data exploration
+│   ├── 02_feature_engineering.ipynb # Feature engineering
+│   └── 03_model_training.ipynb      # Model training & evaluation
+│
+├── src/                        # Source code
+│   ├── data/                   # Data processing scripts
+│   │   ├── clean.py
+│   │   └── preprocess.py
+│   ├── features/               # Feature engineering
+│   │   └── build_features.py
+│   ├── models/                  # Model training & prediction
+│   │   ├── train_model.py
+│   │   └── predict_model.py
+│   └── visualization/           # Visualization
+│       └── visualize.py
+│
+├── models/                      # Trained models
+│   └── logistic_regression.pkl
+│
+├── app/                         # Web application
+│   └── streamlit_app.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+## 🔧 Technology Stack
+
+| Category | Tools/Technologies |
+|----------|---------------------|
+| **Programming Language** | Python 3.x |
+| **Data Processing** | Pandas, NumPy |
+| **Chinese NLP** | Jieba (segmentation) |
+| **Feature Engineering** | Scikit-learn (TF-IDF) |
+| **Machine Learning** | Scikit-learn (LR, RF, XGBoost) |
+| **Visualization** | Matplotlib, Seaborn |
+| **Web Framework** | Streamlit |
+| **Big Data Processing** | PySpark (exploratory attempt) |
+
+## 📈 Core Findings & Insights
+
+### 1. Model Performance Comparison
+By comparing the performance of Logistic Regression, Random Forest, and XGBoost on the same features (TF-IDF), we found:
+
+- **Logistic Regression performs best** (F1=0.70): For high-dimensional sparse text features, linear models have a better inductive bias
+- **Tree models underperform**: Random Forest (F1=0.67) and XGBoost (F1=0.61) failed to outperform the simple linear model
+- **Key Insight**: Under the "bag-of-words + TF-IDF" feature representation, linear models are near the performance ceiling. Breaking through requires more advanced feature representations (e.g., word embeddings, BERT)
+
+### 2. Technical Challenges & Solutions
+| Challenge | Solution | Learning Outcome |
+|-----------|----------|------------------|
+| High noise in Weibo text | Regex cleaning, removal of emojis/URLs/@mentions | Domain-specific data cleaning techniques |
+| Specifics of Chinese word segmentation | Using Jieba tokenizer with stopwords list | Chinese NLP processing pipeline |
+| High-dimensional sparse features | TF-IDF feature hashing (2000 dimensions) | Best practices in text feature engineering |
+| Spark environment issues on Windows | Multiple attempts, finally using Pandas UDF | Differences between production and experimental environments |
+
+## 🚀 Quick Start
+
+### 1. Environment Setup
+```bash
+# Clone the project
+git clone <your-repo-url>
+cd social_media_sentiment
+
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate     # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 
 ## 🎯 项目概述
