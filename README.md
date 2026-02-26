@@ -1,8 +1,14 @@
 # 社交媒体情感分析系统
 
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗-Live%20Demo-blue)](https://huggingface.co/spaces/indeedlove/Social-Media-Sentiment-Analysis)
+[![GitHub](https://img.shields.io/badge/📂-View%20on%20GitHub-black)](https://github.com/inneedloveBu/social_media_sentiment)
+[![bilibili](https://img.shields.io/badge/🎥-View%20on%20Bilibili-yellow)](https://www.bilibili.com/video/BV1M9qwB1EBc/?share_source=copy_web&vd_source=56cdc7ef44ed1ee2c9b9515febf8e9ce&t=223)
+
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Streamlit](https://img.shields.io/badge/Web%20Framework-Streamlit-red)
+
+
 
 ## 🎯 项目概述
 
